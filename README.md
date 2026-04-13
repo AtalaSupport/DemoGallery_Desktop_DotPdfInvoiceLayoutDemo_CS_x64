@@ -6,7 +6,7 @@ This is the C# version.
 
 
 ## Licensing
-This application as configured, requires a license for our DotPdf component.
+This application as configured, requires a license for DotImage Document Imaging as well as our DotPdf component.
 
 > **NOTE**
 > DotPdf licensing is distinct from DotImage Document Imaging and also not the same as our PdfReader licensing. If you're unsure of what you need, please [contact our sales team](mailto:sales@atalasoft.com).
@@ -22,13 +22,16 @@ We do publish our SDK components to NuGet. We have chosen to base the demo on lo
 Still, if you wish to use NuGet for the dependencies instead of relying on locally installed SDK, you can.
 
 - Take note of each of the references we've included:
+    - Atalasoft.DotImage.dll
+    - Atalasoft.DotImage.Lib.dll
     - Atalasoft.PdfDoc.dll
     - Atalasoft.Shared.dll
 - Remove those referneces
 - Open the NuGet Package Manger from `Tools -> NuGet Package Manager -> Manage NuGet Packages for this Solution`
+- Browse for Atalasoft.DotImage.x64
+- Install this package, and it will pull in DotImage Document Imaging (the base SDK)
 - Browse for Atalasoft.DotImage.PdfDoc.x64
-- Install this package, and it will pull in Shared as a depenendcy
-
+- Install this package, and it will pull in the DotPdf component
 
 ## Cloning
 We recommend the following to ensure you clone with the required submodule
